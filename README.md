@@ -2,6 +2,8 @@
 
 This project is a raytracer coded in C, using the CSFML framework (but only using windows related functions, and a function to draw a pixel).
 This is a 1st year project, accomplished as a group project (4 members).
+This project is a school project. Therefore all code had to comply to the school coding style. It does not reflect the coding style I (or any contributor) enjoy most.
+It is the reason all built-in functions are recoded from scratch (eg. atoi, printf...)
 
 
 ## Install CSFML

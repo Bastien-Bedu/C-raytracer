@@ -142,6 +142,7 @@ void			anti_aliasing(t_window *window,
   if (blurring == 0)
     while (sfRenderWindow_isOpen(window->window))
       {
+	print_buffer(window->window, buffer, window->texture, window->sprite);
 	if (sfKeyboard_isKeyPressed(sfKeyEscape) == sfTrue)
 	  sfRenderWindow_close(window->window);
       }

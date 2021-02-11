@@ -26,11 +26,11 @@ void			aff_ray(t_window *window,
   frame = my_framebuffer_create(SCREEN_WIDTH, SCREEN_HEIGHT);
   if (!frame)
     {
-      sfRenderWindow_clear(window->window, sfBlack);
-      sfRenderWindow_drawSprite(window->window, window->sprite, NULL);
-      sfRenderWindow_display(window->window);
       while (sfRenderWindow_isOpen(window->window))
 	{
+	  sfRenderWindow_clear(window->window, sfBlack);
+	  sfRenderWindow_drawSprite(window->window, window->sprite, NULL);
+	  sfRenderWindow_display(window->window);
 	  if (sfKeyboard_isKeyPressed(sfKeyEscape) == sfTrue)
 	    sfRenderWindow_close(window->window);
 	}
